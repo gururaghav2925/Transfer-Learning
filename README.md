@@ -2,7 +2,7 @@
 ## Aim
 To Implement Transfer Learning for classification using VGG-19 architecture.
 ## Problem Statement and Dataset
-Include the problem statement and Dataset
+Develop an image classification model using transfer learning with the pre-trained VGG19 model.
 </br>
 </br>
 </br>
