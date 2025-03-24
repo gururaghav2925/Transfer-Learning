@@ -47,7 +47,7 @@ in_features = model.classifier[-1].in_features
 model.classifier[-1] = nn.Linear(in_features,1)
 ```
 # Include the Loss function and optimizer
-```
+```python
 criterion = nn.BCEWithLogitsLoss()
 optimizer = optim.Adam(model.classifier[-1].parameters(), lr=0.001)
 ```
@@ -55,8 +55,7 @@ optimizer = optim.Adam(model.classifier[-1].parameters(), lr=0.001)
 
 
 # Train the model
-```
-## Step 3: Train the Model
+```python
 def train_model(model, train_loader,test_loader,num_epochs=10):
     train_losses = []
     val_losses = []
