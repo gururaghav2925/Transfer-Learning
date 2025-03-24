@@ -33,7 +33,7 @@ Evaluate the model on the testing dataset to measure accuracy and performance.
 Include your code here
 ```python
 # Load Pretrained Model and Modify for Transfer Learning
-```
+
 from torchvision.models import VGG19_Weights
 model = models.vgg19(weights=VGG19_Weights.DEFAULT)
 
@@ -41,7 +41,7 @@ model = models.vgg19(weights=VGG19_Weights.DEFAULT)
 
 
 # Modify the final fully connected layer to match the dataset classes
-```
+```python
 num_classes = len(train_dataset.classes)
 in_features = model.classifier[-1].in_features
 model.classifier[-1] = nn.Linear(in_features,1)
