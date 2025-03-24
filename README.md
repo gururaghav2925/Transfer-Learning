@@ -102,7 +102,7 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
 ```
 
 
-```
+
 
 ## OUTPUT
 ### Training Loss
