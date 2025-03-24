@@ -109,6 +109,7 @@ def train_model(model, train_loader,test_loader,num_epochs=10):
 </br>
 </br>
 </br>
+
 ![alt text](image.png)
 
 ###  Validation Loss Vs Iteration Plot
