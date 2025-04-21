@@ -1,33 +1,34 @@
 # Implementation-of-Transfer-Learning
 ## Aim
 To Implement Transfer Learning for classification using VGG-19 architecture.
+
+
 ## Problem Statement and Dataset
-Develop an image classification model using transfer learning with the pre-trained VGG19 model.
-</br>
-</br>
-</br>
+The experiment aims to develop a binary classification model using a pretrained VGG19 to distinguish between defected and non-defected capacitors by modifying the last layer to a single neuron. The model will be trained on a dataset containing images of various defected and non-defected capacitors to enhance defect detection accuracy. Optimization techniques will be applied to improve performance, and the model will be evaluated to ensure reliable classification for capacitor quality assessment in manufacturing.
+
 
 ## DESIGN STEPS
-### STEP 1:
- Import required libraries, load the dataset, and define training & testing datasets.
-</br>
 
+### STEP 1: Problem Statement  
+Define the objective of distinguishing between defected and non-defected capacitors using a binary classification model based on a pretrained VGG19.  
 
-### STEP 2:
-</br>
-Initialize the model, loss function, and optimizer. Use CrossEntropyLoss for multi-class classification and Adam optimizer for efficient training.
+### STEP 2: Dataset Collection  
+Use a dataset containing images of defected and non-defected capacitors for model training and evaluation.  
 
-### STEP 3:
-Train the model using the training dataset with forward and backward propagation.
-</br>
+### STEP 3: Data Preprocessing  
+Resize images to match VGG19 input dimensions, normalize pixel values, and create DataLoaders for efficient batch processing.  
 
-### STEP 4:
-Evaluate the model on the testing dataset to measure accuracy and performance.
-<br/>
+### STEP 4: Model Architecture  
+Modify the pretrained VGG19 by replacing the last layer with a single neuron using a sigmoid activation function for binary classification.  
 
-### STEP 5:
- Make predictions on new data using the trained model.
- <br/>
+### STEP 5: Model Training  
+Train the model using a suitable loss function (Binary Cross-Entropy) and optimizer (Adam) for multiple epochs to enhance defect detection accuracy.  
+
+### STEP 6: Model Evaluation  
+Evaluate the model on unseen data using accuracy, precision, recall, and an ROC curve to assess classification performance.  
+
+### STEP 7: Model Deployment & Visualization  
+Save the trained model, visualize predictions, and integrate it into a manufacturing quality assessment system if needed.
 
 ## PROGRAM
 Include your code here
